@@ -3,6 +3,15 @@
 # How to run
 https://openjdk.java.net/projects/code-tools/jmh/
 
+# Create project
+mvn archetype:generate \
+         -DinteractiveMode=false \
+         -DarchetypeGroupId=org.openjdk.jmh \
+         -DarchetypeArtifactId=jmh-java-benchmark-archetype \
+         -DgroupId=<my group/package id> \
+         -DartifactId=<my project artifact name> \
+         -Dversion=<my project version>
+
 # build
 mvn clean install
 
